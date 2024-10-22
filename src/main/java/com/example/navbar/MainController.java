@@ -25,9 +25,6 @@ public class MainController {
      */
     @GetMapping("/")
     public String get(Model model) {
-        // ModelAndView mav = new ModelAndView("main");
-        // mav.addObject("menus", buildMenu());
-        // return mav;
         model.addAttribute("menus", buildMenu());
         return "main";
     }
