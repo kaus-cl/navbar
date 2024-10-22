@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF8" />
+    <title>Landing page</title>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+    <link th:href="@{/css/navbar.css}" rel="stylesheet">
+    <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+</head>
+
+<body>
+    <div th:insert="~{fragments/navbar :: navbar}"></div>
+    <br/>
+    <br/>
+    <div>
+        <h1>Landing page</h1>
+        <p>If you read this, you are in the landing page "main.html"</p>
+    </div>
+</body>
+
+</html>

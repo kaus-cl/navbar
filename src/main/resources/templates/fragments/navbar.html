@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>NavigationBar</title>
+    </head>
+    <body>
+        <div class="topnav" th:fragment="navbar">
+            <div class="dropdown" th:each="menu : ${menus}">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span th:text="${menu.text}" th:remove="tag">text</span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li th:each="item : ${menu.items}"><a class="option" th:href="@{${item.url}}"><span th:text="${item.text}" th:remove="tag">item</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

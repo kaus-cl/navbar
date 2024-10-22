@@ -1,0 +1,51 @@
+.topnav {
+    background-color: #040269;
+    position: fixed; /* or fixed */
+    top: 0;
+    width: 100%;
+}
+
+.dropdown-menu.show {
+    background: #040269;
+    /* border-radius: 0; */
+}
+
+.topnav a {
+    /* border-bottom: 1px white solid; */
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.option {
+    width: 100%;
+}
+
+.topnav a:hover {
+    background-color: #0d47a1;
+    color: white;
+}
+
+.topnav a.active {
+    background-color: #4285F4;
+    color: white;
+}
+
+/*
+ * Overwrite bootstrap styles
+ */
+
+.btn-secondary {
+    --bs-btn-active-bg: #0d47a1;
+    --bs-btn-bg: #040269;
+    --bs-btn-border-color: 0px solid transparent;
+}
+
+.dropdown-menu {
+    border-radius: 0;
+    margin-top: -2px!important;
+    /* transform: translate3d(0px, 42px, 0px) !important; */
+}
